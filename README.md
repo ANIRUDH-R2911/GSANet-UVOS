@@ -68,14 +68,10 @@ We use a two-stage learning strategy: **pretraining** and **finetuning**.
 ### **Pretraining**
 Edit `config.py`.  
 Modify the **data root path** and **GPU index**.
-
-Run:
-python pretrain.py
+Run: `pretrain.py`.
 
 ### **Finetuning**
 Edit `config.py`.  
 Set the **best model path** generated during pretraining.
-
-Run:
-python train.py
+Run: `train.py`
 
