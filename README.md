@@ -6,7 +6,8 @@ The project follows the architecture introduced in the CVPR 2024 paper [*“Guid
 ## Overview
 
 <p align="center">
-  <img src="blackswan_triple.mp4" width="600"/>
+  <video src="blackswan_triple.mp4" width="600" controls>
+  </video>
 </p>
 
 ## Dataset
@@ -74,31 +75,33 @@ Run: `train.py`
 Below is an example visualization from the **DAVIS-2016 \`cows\` sequence**, showing the model’s prediction, slot activations, and input modalities.  
 Each grid contains **8 panels (A–H)** illustrating how GSANet interprets the scene.
 
-![Cows Visualization](assets/cows_visual_grid_00000.jpg)
+<p align="center">
+  <img src="assets/blackswan_visual_grid_000" width="600"/>
+</p>
 
 ### **Panel Descriptions**
 
-- **A — RGB Frame**  
+- **A - RGB Frame**  
   The original input frame from the DAVIS sequence.
 
-- **B — Optical Flow**  
+- **B - Optical Flow**  
   RAFT-generated flow showing motion cues in the scene.
 
-- **C — Predicted Mask**  
+- **C - Predicted Mask**  
   Final segmentation output after multi-scale decoding.
 
-- **D — Ground Truth Mask**  
+- **D - Ground Truth Mask**  
   DAVIS-provided per-frame annotation.
 
-- **E — RGB Slot (Foreground)**  
+- **E - RGB Slot (Foreground)**  
   Slot Attention foreground activation derived from the RGB encoder.
 
-- **F — RGB Slot (Background)**  
+- **F - RGB Slot (Background)**  
   Background slot activation from the RGB encoder.
 
-- **G — Flow Slot (Foreground)**  
+- **G - Flow Slot (Foreground)**  
   Foreground slot activation derived from the motion encoder.
 
-- **H — Flow Slot (Background)**  
+- **H - Flow Slot (Background)**  
   Background slot activation from optical flow.
 
