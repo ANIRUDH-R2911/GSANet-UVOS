@@ -76,7 +76,7 @@ Below is an example visualization from the **DAVIS-2016 \`cows\` sequence**, sho
 Each grid contains **8 panels (A–H)** illustrating how GSANet interprets the scene.
 
 <p align="center">
-  <img src="assets/blackswan_visual_grid_00000.jpg" width="600"/>
+  <img src="assets/cows_visual_grid_00000.jpg" width="600"/>
 </p>
 
 ### **Panel Descriptions**
