@@ -104,10 +104,10 @@ Below is an example visualization from the **DAVIS-2016 \`cows\` sequence**, sho
 
 | Metric | Score |
 |--------|--------|
-| **Mean IoU (J-Mean)** | 0.8518 |
-| **Mean Boundary F (F-Mean)** | 0.8400 |
-| **J Recall** | 0.89 |
-| **Temporal Decay (J & F)** | ~0.02 |
+| **Mean IoU (J-Mean)** | 0.8479 |
+| **Mean Boundary F (F-Mean)** | 0.8447 |
+| **J Recall** | 0.9543 |
+| **Temporal Decay (J & F)** | ~0.04 |
 
 
 ## Citation
