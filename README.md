@@ -100,6 +100,16 @@ Below is an example visualization from the **DAVIS-2016 \`cows\` sequence**, sho
 - **H - Flow Slot (Background)**  
   Background slot activation from optical flow.
 
+### Quantitative Results (DAVIS-2016)
+
+| Metric | Score |
+|--------|--------|
+| **Mean IoU (J-Mean)** | 0.8518 |
+| **Mean Boundary F (F-Mean)** | 0.8400 |
+| **J Recall** | 0.89 |
+| **Temporal Decay (J & F)** | ~0.02 |
+
+
 ## Citation
 
 If you use this reimplementation, please cite the original GSANet paper:
