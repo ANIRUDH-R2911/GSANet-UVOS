@@ -1,19 +1,13 @@
 # Structured Slot Aggregation for Cross-Modal Video Object Segmentation
 
 This repository contains a complete **reimplementation of the Guided Slot Attention Network (GSANet)** for **unsupervised video object segmentation (U-VOS)**.  
-The project follows the architecture introduced in the CVPR 2024 paper *“Guided Slot Attention for Unsupervised Video Object Segmentation” (Lee et al.)* and rebuilds the full system end-to-end.
+The project follows the architecture introduced in the CVPR 2024 paper [*“Guided Slot Attention for Unsupervised Video Object Segmentation” (Lee et al.)*](https://github.com/Hydragon516/GSANet) and rebuilds the full system end-to-end.
 
-This implementation includes:
+## Overview
 
-- Saliency-based pretraining using DUTS
-- RGB + Optical Flow dual-stream video encoder using SegFormer-B2
-- K-Means and slot-based prototype extraction
-- Feature Aggregation Transformer (FAT) for cross-modal feature interaction
-- Triple-iterative Slot Attention refinement for temporal consistency
-- Multi-scale decoder for segmentation prediction
-- Complete evaluation pipeline for DAVIS (J & F metrics)
-
-This repo provides a fully functional, research-friendly reproduction of GSANet that can be trained, evaluated, and extended for further study in video segmentation and slot-based representation learning.
+<p align="center">
+  <img src="blackswan_triple.mp4" width="600"/>
+</p>
 
 ## Dataset
 
@@ -75,5 +69,36 @@ Edit `config.py`.
 Set the **best model path** generated during pretraining.
 Run: `train.py`
 
+## Result
 
+Below is an example visualization from the **DAVIS-2016 \`cows\` sequence**, showing the model’s prediction, slot activations, and input modalities.  
+Each grid contains **8 panels (A–H)** illustrating how GSANet interprets the scene.
+
+![Cows Visualization](assets/cows_visual_grid_00000.jpg)
+
+### **Panel Descriptions**
+
+- **A — RGB Frame**  
+  The original input frame from the DAVIS sequence.
+
+- **B — Optical Flow**  
+  RAFT-generated flow showing motion cues in the scene.
+
+- **C — Predicted Mask**  
+  Final segmentation output after multi-scale decoding.
+
+- **D — Ground Truth Mask**  
+  DAVIS-provided per-frame annotation.
+
+- **E — RGB Slot (Foreground)**  
+  Slot Attention foreground activation derived from the RGB encoder.
+
+- **F — RGB Slot (Background)**  
+  Background slot activation from the RGB encoder.
+
+- **G — Flow Slot (Foreground)**  
+  Foreground slot activation derived from the motion encoder.
+
+- **H — Flow Slot (Background)**  
+  Background slot activation from optical flow.
 
