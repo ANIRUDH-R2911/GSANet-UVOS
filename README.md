@@ -19,6 +19,7 @@ This repo provides a fully functional, research-friendly reproduction of GSANet 
 
 We use the [DUTS](https://saliencydetection.net/duts/) train dataset for model pretraining and [DAVIS 2016](https://davischallenge.org/davis2016/code.html) train dataset for finetuning. The optical flow maps for DAVIS 2016 were generated using [RAFT](https://github.com/princeton-vl/RAFT). The Final dataset structure is:
 
+```bash
 dataset/
 ├── DUTS_train/
 │   ├── RGB/
@@ -58,6 +59,7 @@ dataset/
     │
     ├── bmx-trees/
     └── ...
+```
 
 
 
