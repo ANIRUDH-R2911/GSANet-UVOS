@@ -17,7 +17,7 @@ This repo provides a fully functional, research-friendly reproduction of GSANet 
 
 ## Dataset
 
-We use the [DUTS](https://saliencydetection.net/duts/) train dataset for model pretraining and [DAVIS 2016](https://davischallenge.org/davis2016/code.html) train dataset for finetuning. The optical flow maps for DAVIS 2016 were generated using [RAFT](https://github.com/princeton-vl/RAFT). The Final dataset structure is:
+We use the [DUTS](https://saliencydetection.net/duts/) train dataset for model pretraining and [DAVIS 2016](https://davischallenge.org/davis2016/code.html) train dataset for finetuning and test dataset for evaluation. The optical flow maps for DAVIS 2016 were generated using [RAFT](https://github.com/princeton-vl/RAFT). The Final dataset structure is:
 
 ```bash
 dataset/
@@ -61,5 +61,14 @@ dataset/
     └── ...
 ```
 
+## Training Model
 
+We use a two-stage learning strategy: **pretraining** and **finetuning**.
+
+### **Pretraining**
+Edit `config.py`.  
+Modify the **data root path** and **GPU index**.
+
+Run:
+python pretrain.py
 
