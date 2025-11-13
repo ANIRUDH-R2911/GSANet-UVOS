@@ -6,8 +6,7 @@ The project follows the architecture introduced in the CVPR 2024 paper [*“Guid
 ## Overview
 
 <p align="center">
-  <video src="blackswan_triple.mp4" width="600" controls>
-  </video>
+  <img src="assets/cows_triple.gif" width="600"/>
 </p>
 
 ## Dataset
