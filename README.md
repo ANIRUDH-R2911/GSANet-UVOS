@@ -72,3 +72,10 @@ Modify the **data root path** and **GPU index**.
 Run:
 python pretrain.py
 
+### **Finetuning**
+Edit `config.py`.  
+Set the **best model path** generated during pretraining.
+
+Run:
+python train.py
+
