@@ -126,4 +126,4 @@ If you use this reimplementation, please cite the original GSANet paper:
 ```
 
 ## Course   
-- **Purdue University** – ECE 59500CV: Deep Learning for Computer Vision course 
+- **Purdue University** – ECE 59500CV: Deep Learning for Computer Vision
